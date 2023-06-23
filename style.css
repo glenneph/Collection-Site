@@ -1,4 +1,4 @@
-/* Global or Desktop view over here */
+Global or Desktop view over here
 
 body {
     font-family: 'Inter', sans-serif;
@@ -42,16 +42,12 @@ h1 {
 }
 
 header {
-    width: 1024px;
+    max-width: 1024px;
     margin: 0 auto;
     min-height: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-nav {
-    flex-wrap: wrap;
 }
 
 nav a {
@@ -75,6 +71,9 @@ p {
     padding: 15px 10px;
 }
 
+.mob-wrapper {
+    display: none;
+}
 
 /* Tablet view */
 @media(max-width: 768px) {
@@ -85,6 +84,48 @@ p {
 
 .hide-desktop {
     display: block;
+}
+
+header h1 {
+    text-align: center;
+    min-height: 40px;
+    padding-top: 18px;
+}
+
+nav a{
+    display: block;
+    margin-left: 10px;
+}
+
+.header-container {
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.container {
+    padding-top: 20px;
+}
+
+nav {
+    display: none;
+}
+
+.mob-wrapper {
+    display: block;
+    width: 40px;
+    padding-right: 30px;
+}
+
+.mob-wrap {
+    display: none;
+    position: absolute;
+}
+
+.navbutton {
+    display: block;
+    padding: 15px 30px;
+    margin-left: -90px;
+    background-color: chocolate;
 }
 
 }
